@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.play-animation {
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 #28b463;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #28b46285;
+  }
+}
