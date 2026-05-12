@@ -906,7 +906,117 @@
     </section>
     <!-- Blog End -->
 
+    <!-- Contact Us Section -->
+    <section class="contact-section font-[Poppins] bg-[#F7F7F7]">
+        <div class="contact-aria grid items-center lg:grid-cols-2 lg:gap-4 gap-2">
+            <div class="contact-image">
+                <img src="./image/contact.png" alt="">
+            </div>
+            <div class="contact-form lg:p-10 p-4">
+                <h3 class="text-[#28B463] text-[18px] font-bold">Contact</h3>
+                <h2 class="lg:text-[30px] text-[22px] text-[#333333] font-bold mt-3 mb-3">Request A Free Consulting</h2>
+                <p class="text-[15px] text-[#555555] mb-3 leading-6">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit Aenean commo doligula eget dolor. Aenean massa. Cum sociis natoque penatibus</p>
+                <form class="mt-10" action="">
+                    <div class="form-group lg:flex lg:gap-8 gap-5">
+                        <input class="w-full focus:outline-none text-[15px] p-3 bg-white" type="text"
+                            placeholder="Full Name">
+                        <input class="w-full focus:outline-none p-3 text-[15px] bg-white mt-5 lg:mt-0" type="email"
+                            placeholder="Email">
+                    </div>
+                    <input class="w-full mt-7 text-[15px] bg-white p-3 focus:outline-none" type="text"
+                        placeholder="Subject">
+                    <div class="mt-7">
+                        <textarea name=""
+                            class="w-full text-[15px] h-37 resize-none focus:outline-none p-3 bg-white rounded-sm"
+                            placeholder="Your Message" id=""></textarea>
+                        <button
+                            class="mt-6 py-3 px-4 tracking-wide transition font-semibold  hover:text-[#28B463] hover:bg-transparent border hover:border-[#28B463] text-white rounded border-transparent bg-[#28B463]">Submit
+                            Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us End -->
 
+    <!-- Company logo Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Main Area -->
+            <div class="relative group">
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper overflow-hidden">
+
+                    <div class="swiper-wrapper py-6">
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white border transform hover:-translate-y-1 hover:shadow transition border-gray-200 h-35 flex items-center justify-center">
+                                <img src="./image/client-1.webp" alt="" class="max-w-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white border transform hover:-translate-y-1 hover:shadow transition border-gray-200 h-35 flex items-center justify-center">
+                                <img src="./image/client-2.webp" alt="" class="max-w-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white border transform hover:-translate-y-1 hover:shadow transition border-gray-200 h-35 flex items-center justify-center">
+                                <img src="./image/client-3.webp" alt="" class="max-w-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white border transform hover:-translate-y-1 hover:shadow transition border-gray-200 h-35 flex items-center justify-center">
+                                <img src="./image/client-4.webp" alt="" class="max-w-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div
+                                class="bg-white border transform hover:-translate-y-1 hover:shadow transition border-gray-200 h-35 flex items-center justify-center">
+                                <img src="./image/client-5.webp" alt="" class="max-w-full object-contain">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev w-10! h-10! bg-green-500 text-white! rounded-none 
+                opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible
+                transition-all duration-500
+                -left-15 group-hover:left-0
+                after:text-sm!">
+                </div>
+
+                <div class="swiper-button-next w-10! h-10! bg-green-500 text-white! rounded-none 
+                opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible
+                transition-all duration-500
+                -right-15 group-hover:right-0
+                after:text-sm!">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Company logo End -->
 
 
     <!-- Swiper.js Link -->
@@ -936,6 +1046,42 @@
 
                 1024: {
                     slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+    <!-- logo link script -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 30,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+
+                640: {
+                    slidesPerView: 2,
+                },
+
+                768: {
+                    slidesPerView: 3,
+                },
+
+                1024: {
+                    slidesPerView: 4,
                 },
             },
         });
